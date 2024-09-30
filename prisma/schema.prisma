@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -14,23 +8,26 @@ datasource db {
 }
 
 model PrayerSchedule {
-  id          Int      @id @default(autoincrement())
-  city        String
-  fajr        DateTime
-  dhuhr       DateTime
-  asr         DateTime
-  maghrib     DateTime
-  isha        DateTime
-}
-
-model DailyDua {
-  id          Int      @id @default(autoincrement())
-  title       String
-  dua         String
+  id    Int    @id @default(autoincrement())
+  time  String
+  prayer String
 }
 
 model AsmaulHusna {
-  id          Int      @id @default(autoincrement())
-  name        String
-  meaning     String
+  id      Int    @id @default(autoincrement())
+  name    String
+  meaning String
+}
+
+model DailyPrayer {
+  id    Int    @id @default(autoincrement())
+  title String
+  text  String
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  name     String?
 }
