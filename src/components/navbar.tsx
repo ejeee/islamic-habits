@@ -7,9 +7,9 @@ import { AlarmClock, HandHelping, List, CircleUserRound } from "lucide-react";
 const navbarList = [
   {
     id: 1,
-    title: "Prayer Schedule",
+    title: "Jadwal Sholat",
     icon: AlarmClock,
-    href: "/prayer-schedule"
+    href: "/jadwal-sholat"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const navbarList = [
     id: 4,
     title: "Account",
     icon: CircleUserRound,
-    href: "/signin"
+    href: "/register"
   }
 ];
 

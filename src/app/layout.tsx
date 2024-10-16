@@ -1,5 +1,4 @@
-// src/app/layout.tsx
-import './globals.css';
+import './styles/globals.css';
 import Navbar from '../components/navbar';
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ const prayerTimes = [
   { time: '19:00', prayer: 'Isya' },
 ];
 
-export default function PrayerSchedule() {
+export default function jadwalSholat() {
   return (
     <div className="max-w-lg mx-auto p-4">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Jadwal Sholat</h1>

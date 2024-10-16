@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
-  await prisma.prayerSchedule.createMany({
+  await prisma.jadwalSholat.createMany({
     data: [
       { time: '05:00', prayer: 'Subuh' },
       { time: '06:30', prayer: 'Dhuhr' },
@@ -23,7 +23,7 @@ async function main() {
     ],
   });
 
-  await prisma.dailyPrayers.createMany({
+  await prisma.doaHarian.createMany({
     data: [
       { title: 'Doa Sebelum Tidur', text: 'اللّهُمّ إنّي أسأَلُكَ خَيْرَ هذِهِ اللّيْلَةِ، وَأعوذُ بِكَ مِن شَرِّها' },
       { title: 'Doa Setelah Sholat', text: 'أستغفر الله، أستغفر الله، أستغفر الله' },

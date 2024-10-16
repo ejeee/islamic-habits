@@ -7,7 +7,7 @@ const dailyPrayers = [
   // Tambahkan doa-doa lainnya
 ];
 
-export default function DailyPrayers() {
+export default function doaHarian() {
   return (
     <div className="max-w-lg mx-auto p-4">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Doa-Doa Harian</h1>

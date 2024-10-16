@@ -7,19 +7,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model PrayerSchedule {
+model jadwalSholat {
   id    Int    @id @default(autoincrement())
   time  String
   prayer String
 }
 
-model AsmaulHusna {
+model asmaulHusna {
   id      Int    @id @default(autoincrement())
   name    String
   meaning String
 }
 
-model DailyPrayer {
+model doaHarian {
   id    Int    @id @default(autoincrement())
   title String
   text  String

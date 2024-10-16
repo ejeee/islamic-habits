@@ -1,11 +1,10 @@
-// src/app/auth/signin/page.tsx
 'use client';
 
 import React, { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-const SignIn = () => {
+const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -48,11 +47,11 @@ const SignIn = () => {
           className="border p-2 mb-2 w-full"
         />
         <button type="submit" className="bg-blue-500 text-white p-2 w-full">
-          Sign In
+          Daftar
         </button>
       </form>
     </div>
   );
 };
 
-export default SignIn;
+export default Register;
